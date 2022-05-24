@@ -17,11 +17,11 @@ const Navbar = () => {
 
   const [isToggle, setToggle] = useState(false);
   const handleClick = () => {
-    setToggle(true);
+    setToggle(!isToggle);
   };
 
   const closeMenu = () => {
-    setToggle(false);
+    setToggle(!isToggle);
   };
   const navItems = ["favorite", "popular", "airing", "upcoming"]
 
