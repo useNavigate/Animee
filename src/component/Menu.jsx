@@ -14,7 +14,6 @@ import {
 } from "../Style/Navbar.style";
 
 const Navbar = () => {
-
   const [isToggle, setToggle] = useState(false);
   const handleClick = () => {
     setToggle(!isToggle);
@@ -23,15 +22,12 @@ const Navbar = () => {
   const closeMenu = () => {
     setToggle(!isToggle);
   };
-  const navItems = ["favorite", "popular", "airing", "upcoming"]
+  const navItems = ["favorite", "popular", "airing", "upcoming"];
 
-
-
-  useEffect(() => { }, [isToggle]);
+  useEffect(() => {}, [isToggle]);
   return (
-    <Nav  >
+    <Nav>
       <NavBox>
-
         <MenuIcon onClick={handleClick} toggle={isToggle} />
         <NavDrop toggle={isToggle}>
           <ul>
@@ -42,25 +38,25 @@ const Navbar = () => {
               </li>
             </Link>
             <Link to="/page/upcoming/tv" state={"upcoming"}>
-              <li>
+              <li onClick={closeMenu}>
                 <UpcomingIcon />
                 Upcoming
               </li>
             </Link>
             <Link to="/page/airing/tv" state={"airing"}>
-              <li>
+              <li onClick={closeMenu}>
                 <LiveTvIcon style={{ fontSize: "2.5rem" }} />
                 Airing
               </li>
             </Link>
             <Link to="/page/bypopularity/tv" state={"bypopularity"}>
-              <li>
+              <li onClick={closeMenu}>
                 <ThumbUpAltRoundedIcon style={{ fontSize: "2.5rem" }} />
                 Popular
               </li>
             </Link>
             <Link to="/page/favorite/tv" state={"favorite"}>
-              <li>
+              <li onClick={closeMenu}>
                 <FavoriteIcon style={{ fontSize: "2.5rem" }} />
                 Favorite
               </li>
