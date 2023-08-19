@@ -16,7 +16,5 @@ Mobile-friendly and Desktop-friendly: The website is designed to be accessible o
 Screenshots
 
 # Screenshots
-![image](https://user-images.githubusercontent.com/106133580/216780143-c3be33ee-c42e-4336-8446-04025235b00d.png)
-![image](https://user-images.githubusercontent.com/106133580/216780160-c86e1455-9ee6-4bb4-8c8e-58b29d2beaae.png)
-![image](https://user-images.githubusercontent.com/106133580/216780184-75e71ea8-98db-4e0d-ba3c-31f189bc578c.png)
-![image](https://user-images.githubusercontent.com/106133580/216780198-27d78279-f4ec-40e5-b5dc-8520da8545fa.png)
+![image](https://cdn.discordapp.com/attachments/1082730279044657222/1142516239911104622/ezgif-3-c264f0cf4e.gif)
+
