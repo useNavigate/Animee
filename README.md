@@ -15,6 +15,7 @@ Anime Details Page: Users can access comprehensive details about a particular an
 Mobile-friendly and Desktop-friendly: The website is designed to be accessible on multiple devices, making it easy for users to access it on the go.
 Screenshots
 
-# Screenshots
+# image
 ![image](https://cdn.discordapp.com/attachments/1082730279044657222/1142516239911104622/ezgif-3-c264f0cf4e.gif)
+
 
