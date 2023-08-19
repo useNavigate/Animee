@@ -62,22 +62,23 @@ export const NavDrop = styled("div")((props) => ({
     },
   },
 }));
+
+
+
+
 export const MenuIcon = styled(MenuRoundedIcon)((props) => ({
   zIndex: "999",
   display: "flex",
   width: "3rem",
   height: "3rem",
-  color: props.toggle && "white",
+  color: props.toggle ? "white" : "initial", // Use "initial" or an appropriate default color
   position: "absolute",
   cursor: "pointer",
-  background: props.toggle === false ? "#02DAC5" : "none",
-  // color: props.toggle ? "#02DAC5" : "black",
+  background: props.toggle === undefined ? "#02DAC5" : "none",
   padding: "0.2rem",
-  borderRadius: props.toggle === false ? "50%" : "none",
-  boxShadow:
-    props.toggle === false ? "rgba(0, 0, 0, 0.5) 0px 8px  20px" : "none",
+  borderRadius: props.toggle === undefined ? "50%" : "none",
+  boxShadow: props.toggle === undefined ? "rgba(0, 0, 0, 0.5) 0px 8px 20px" : "none",
 }));
-
 export const HomeIcon = styled(HomeRoundedIcon)((props) => ({
   fontSize: "2.5rem",
 }));

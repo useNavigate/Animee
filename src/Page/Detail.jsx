@@ -105,14 +105,16 @@ const Detail = () => {
 
         <Grid item xs={4} sm={4} md={8} key={data.mal_id + "image"} >
           <SideCard>
-            <iframe
+
+            {data.trailer.embed_url === null ? <h1>Video is currently unavailable</h1>: <iframe
               src={data.trailer.embed_url}
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
               title="video"
               style={{ width: "100%", height: "450px" }}
-            />
+            />}
+
           </SideCard>
           <SynopCard>
             <p>{data.synopsis}</p>

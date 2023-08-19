@@ -40,13 +40,13 @@ const FloatingSearch = () => {
 
   return (
     <SearchContainer>
-      <Search toggle={isClick}>
+      <Search toggle={isClick ? String(true) : undefined}>
         <SearchBox>
-          <SearchIcon onClick={handleClick} toggle={isClick} />
+          <SearchIcon onClick={handleClick} toggle={isClick ? String(true) : undefined} />
           <Form type="submit" onSubmit={handleSubmit}>
             <input
               type="text"
-              toggle={isClick}
+              toggle={isClick ? String(true) : undefined}
               ref={queryRef}
               placeholder="search..."
             />

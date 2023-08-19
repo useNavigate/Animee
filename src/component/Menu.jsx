@@ -28,8 +28,8 @@ const Navbar = () => {
   return (
     <Nav>
       <NavBox>
-        <MenuIcon onClick={handleClick} toggle={isToggle} />
-        <NavDrop toggle={isToggle}>
+        <MenuIcon onClick={handleClick} toggle={isToggle ? String(true): undefined} />
+        <NavDrop toggle={isToggle ? String(true): undefined}>
           <ul>
             <Link to="/">
               <li onClick={closeMenu}>

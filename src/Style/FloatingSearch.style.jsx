@@ -78,10 +78,10 @@ export const SearchIcon = styled(SearchRoundedIcon)((props) => ({
     width: "3rem",
     height: "3rem",
     cursor: "pointer",
-    background: props.toggle === false ? "#02DAC5" : "none",
+    background: props.toggle === undefined ? "#02DAC5" : "none",
     padding: "0.2rem",
-    borderRadius: props.toggle === false ? "50%" : "none",
-    boxShadow: props.toggle === false ? "rgba(2, 218, 197, 0.2) 0px 8px  20px" : "none",
+    borderRadius: props.toggle === undefined ? "50%" : "none",
+    boxShadow: props.toggle === undefined ? "rgba(2, 218, 197, 0.2) 0px 8px  20px" : "none",
     zIndex: 999
 }))
 
