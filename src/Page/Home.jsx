@@ -30,10 +30,10 @@ import {
 const Home = () => {
   const navigate = useNavigate()
 
-  //Default Value 
+  //Default Value
   const [filtered, setFiltered] = useState("tv")
   const filter = ["tv", "movie", "ova", "special", "ona", "music"]
-  const [type, setType] = useState("upcoming");
+  const [type, setType] = useState("favorite");
   //Fetch Lazy Loading Screen
   const URL = "https://api.jikan.moe/v4/top/anime";
   const [pageNumber, setPageNumber] = useState(1);
@@ -55,7 +55,7 @@ const Home = () => {
   );
 
 
-  //Render when Filter is Changed 
+  //Render when Filter is Changed
   const handleFilter = (item) => setFiltered(item)
   useEffect(() => { }, [filtered]);
 
